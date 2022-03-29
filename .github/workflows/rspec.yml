@@ -89,4 +89,4 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - run: |
-          ./bin/foo.rb
+          ruby ./bin/foo.rb
