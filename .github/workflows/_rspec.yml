@@ -1,9 +1,9 @@
-name: rspec
+name: _rspec
 on:
-  - workflow_call
+  workflow_call:
 
 jobs:
-  test:
+  _rspec:
     runs-on: ubuntu-latest
     strategy:
       matrix:

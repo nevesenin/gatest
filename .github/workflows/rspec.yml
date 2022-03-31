@@ -7,7 +7,6 @@ on:
       - closed
 
 jobs:
-  test:
+  rspec:
     if: github.event.pull_request.action != 'closed' || github.event.pull_request.merged == true
-    steps:
-      - uses: ./.github/workflows/_rspec
+    uses: ./.github/workflows/_rspec.yml
